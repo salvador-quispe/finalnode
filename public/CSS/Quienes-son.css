@@ -1,0 +1,396 @@
+/* Estilos para el logo */
+.logo-img {
+    width: 50px; /* Tamaño reducido del logo */
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Estilos para la sección del video */
+.hero {
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+.background-video,
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Coloca el video en el fondo */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro para mejorar la visibilidad del texto */
+    z-index: 2; /* Coloca la superposición sobre el video */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3; /* Coloca el texto sobre el video y la superposición */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+    background-color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow; /* Cambiar a tu color preferido */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos de imagen para el equipo */
+#team img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #333;
+}
+
+/* Espacio superior para el video */
+.embed-responsive {
+    margin-top: 30px;
+}
+
+/* Estilos para las imágenes de la sección de visión */
+.vision-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vision-img {
+    width: 150px; /* Tamaño normal para las primeras imágenes */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #333;
+    transition: transform 0.6s ease; /* Transición suave para el tamaño */
+}
+
+/* Estilos específicos para las últimas tres imágenes de la sección de visión */
+.vision-container .col-4:last-child .vision-img {
+    width: 200px; /* Aumenta el tamaño para las últimas tres imágenes */
+    height: 200px;
+}
+
+/* Efecto de rotación al pasar el mouse */
+.position-relative {
+    position: relative; /* Para poder usar el overlay */
+    perspective: 1000px; /* Para la perspectiva de 3D */
+}
+
+.rotate-on-hover {
+    position: relative;
+    transition: transform 0.6s ease; /* Transición para la rotación */
+    transform-style: preserve-3d; /* Para mantener los elementos 3D */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+.rotate-on-hover:hover .overlay {
+    opacity: 1; /* Muestra el overlay al pasar el mouse */
+}
+
+.rotate-on-hover:hover .front {
+    transform: rotateY(180deg); /* Gira la imagen */
+}
+
+.rotate-on-hover:hover .back {
+    transform: rotateY(0deg); /* Muestra el reverso */
+}
+
+/* Estilos para el overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 224, 0.8); /* Amarillo suave */
+    color: black; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+    font-size: 1.2rem; /* Tamaño del texto */
+    text-align: center; /* Alinear el texto al centro */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos para el reverso */
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow; /* Color del reverso */
+    color: black; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Bordes redondeados */
+    transform: rotateY(180deg); /* Gira el reverso */
+}
+
+/* Estilos para la sección de misión y visión */
+.mission-vision-container {
+    display: flex; /* Para colocar misión y visión lado a lado */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para la sección de misión */
+.mission {
+    flex: 1; /* Para que ambos ocupen el mismo espacio */
+    margin: 0 20px; /* Espacio entre misión y visión */
+    background-color: rgba(255, 255, 204, 0.8); /* Fondo amarillo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para la sección de visión */
+.vision {
+    flex: 1; /* Para que ambos ocupen el mismo espacio */
+    margin: 0 20px; /* Espacio entre misión y visión */
+    background-color: rgba(173, 216, 230, 0.8); /* Fondo celeste claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.mission-title,
+.vision-title {
+    font-size: 1.5rem; /* Tamaño del título */
+    font-weight: bold; /* Peso del texto */
+}
+
+.mission-content,
+.vision-content {
+    font-size: 1rem; /* Tamaño del contenido */
+}
+
+/* Estilos para la sección de propósito */
+#proposito {
+    background-color: #add8e6; /* Fondo color celeste */
+    color: #333; /* Color del texto */
+    padding: 40px 20px; /* Espaciado */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#proposito h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#proposito p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Fondo celeste para la sección de Misión */
+#features {
+    background-color: #add8e6; /* Celeste */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Fondo amarillo suave para la sección de Visión */
+#vision {
+    background-color: #fff8dc; /* Amarillo suave */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Estilos adicionales */
+.feature-text, .text-right {
+    color: #333; /* Color de texto */
+}
+
+.feature-box h4, .vision-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-box p, .vision-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.video-section {
+    background-color: #f0f8ff; /* Color de fondo celeste */
+    padding: 20px;
+}
+
+.video-container {
+    display: flex; /* Para alinear los videos en fila */
+    justify-content: flex-start; /* Alinear al costado */
+    gap: 20px; /* Espacio entre los videos */
+    max-width: 100%; /* Para que no exceda el ancho de la pantalla */
+    overflow-x: auto; /* Permitir scroll horizontal si hay muchos videos */
+}
+
+.video-container iframe {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 169px; /* Relación de aspecto 16:9 */
+    border-radius: 8px; /* Bordes redondeados */
+    border: none; /* Elimina el borde del iframe */
+}
+.more-info {
+    text-align: center; /* Centramos el texto */
+    margin-top: 20px; /* Espacio arriba del enlace */
+}
+
+.btn-more {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-more:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+}
+.benefits-container {
+    background-color: #e0f7e5; /* Color de fondo verde claro */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen alrededor del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.benefits-section h2 {
+    font-size: 2rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centramos el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.benefits-list {
+    list-style-type: none; /* Quitar el estilo de lista */
+    padding: 0; /* Quitar el padding */
+}
+
+.benefits-list li {
+    font-size: 1.1rem; /* Tamaño de fuente del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espacio entre ítems de la lista */
+    color: #333; /* Color de texto */
+}
+.benefits-section {
+    background-color: #e7f4fa; /* Color de fondo celeste claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px; /* Margen alrededor de la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.benefits-section h2 {
+    font-size: 2rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centramos el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.benefits-list {
+    list-style-type: none; /* Quitar el estilo de lista */
+    padding: 0; /* Quitar el padding */
+}
+
+.benefit-item {
+    margin-bottom: 15px; /* Espacio entre ítems de la lista */
+}
+
+.benefit-item p {
+    font-size: 1.1rem; /* Tamaño de fuente del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color de texto */
+    display: flex; /* Usar flexbox para alinear el texto */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.btn-more {
+    background-color: #4caf50; /* Color de fondo verde */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 10px; /* Espacio a la izquierda del botón */
+}
+
+.detail-text {
+    display: none; /* Ocultar texto adicional por defecto */
+    margin-left: 10px; /* Espacio a la izquierda del texto adicional */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #555; /* Color de texto más claro */
+}
+/* Estilo para el botón de volver al inicio */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Oculto por defecto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}

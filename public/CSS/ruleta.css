@@ -1,0 +1,49 @@
+.circle-container {
+    width: 50vw; /* Ajusta el ancho a un 50% del ancho de la ventana */
+    height: 50vw; /* Ajusta la altura a un 50% del ancho de la ventana */
+    max-width: 300px; /* Define un tamaño máximo */
+    max-height: 300px; /* Define un tamaño máximo en altura */
+    min-width: 150px; /* Tamaño mínimo en pantallas pequeñas */
+    min-height: 150px; /* Tamaño mínimo en pantallas pequeñas */
+    overflow: hidden;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centra horizontalmente */
+    position: relative; /* Para mejorar la posición de elementos internos si los tuviera */
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+}
+
+/* Estilo para pantallas más pequeñas (tabletas y dispositivos de tamaño mediano) */
+@media (max-width: 768px) {
+    .circle-container {
+        width: 60vw; /* Ajusta el tamaño a un 60% en pantallas medianas */
+        height: 60vw; /* Mantiene la proporción */
+        max-width: 250px; /* Limita el tamaño máximo */
+        min-width: 120px; /* Tamaño mínimo */
+    }
+    .circular-image {
+        object-fit: contain; /* Si la imagen es demasiado grande, se ajusta sin recortes */
+    }
+}
+
+/* Estilo para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .circle-container {
+        width: 70vw; /* Ajusta el tamaño al 70% en pantallas más pequeñas */
+        height: 70vw; /* Mantiene la proporción */
+        max-width: 200px; /* Limita el tamaño máximo */
+        min-width: 100px; /* Tamaño mínimo */
+    }
+    .circular-image {
+        object-fit: contain; /* Ajusta la imagen para que no quede recortada */
+    }
+}

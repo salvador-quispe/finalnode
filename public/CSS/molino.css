@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #E4F7F6;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Fundamentos */
+.fundamentos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #333333;
+}
+
+/* Diseño de las tarjetas */
+.fundamento {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Calcula el ancho menos margen */
+    text-align: center;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(231, 105, 105, 0.1); /* Sombra para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px; /* Espacio entre tarjetas */
+    position: relative; /* Para que el gráfico interno no afecte al diseño */
+    overflow: hidden; /* Oculta el gráfico que sobresale */
+}
+
+/* Efecto hover */
+.fundamento:hover {
+    transform: scale(1.05); /* Hace que la tarjeta crezca ligeramente */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Diferencia de color para algunas tarjetas */
+.fundamento.verde {
+    background-color: #d8f3dc; /* Color verde suave */
+    color: #333;
+}
+
+/* Gráfico decorativo: línea curva */
+.fundamento::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%; /* Círculo que sobresale parcialmente */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .fundamento {
+        width: calc(50% - 40px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .fundamento {
+        width: calc(100% - 40px); /* Una columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para encabezados */
+    }
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Objetivos de Desarrollo Sostenible</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tus propios estilos CSS -->
+    <link rel="stylesheet" href="/public/CSS/styles.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="Inicio.html">
+                <img src="/public/IMG/logo-nav.png" alt="Logo" class="img-fluid"
+                    style="width: 40px; height: 40px; margin-right: 8px;">
+                Eternal Energy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/public/HTML/Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/HTML/ODS7-Inicio.html">ODS7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/HTML/producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/HTML/Quienes-son.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/HTML/Contactanos.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="message-section">
+        <div class="message-container">
+            <div id="message" class="message">
+                🎉 Evento de Hoy 🎉 - <span id="eventoHoyMensaje">Cargando evento...</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>LOS OBJETIVOS DE</h1>
+                <h1>DESARROLLO</h1>
+                <h1 class="highlight">SOSTENIBLE</h1>
+                <p>Construyendo un futuro equitativo y sostenible para todos,</p>
+                <p>donde el progreso social y económico respete y preserve</p>
+                <p>nuestro planeta.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 01 -->
+    <section class="section-01">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>¿Qué son los ODS?</h2>
+                    <p>Los ODS, Objetivos de Desarrollo Sostenible, son 17 metas globales que se establecieron para
+                        abordar los problemas más urgentes del mundo, como la pobreza, la igualdad y el cambio
+                        climático. Fueron adoptados por todos los países de la ONU en 2015 para asegurar un futuro mejor
+                        para todos. Cada objetivo tiene metas específicas y se espera que sean alcanzados para el año
+                        2030.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="/public/IMG/ruleta.png" alt="ODS Wheel" class="circular-image" id="rotatingImage">
+                </div>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="/public/CSS/ruleta.css">
+    <script src="/public/JS/ruleta.js"></script>
+
+    <!-- Section 02 -->
+    <section class="section-02-custom">
+        <div class="container-custom">
+            <div class="titulo text-center mb-4">
+                <img src="/public/IMG/image.png" alt="SDG Title" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="grid-custom" id="iconGrid">
+                    <!-- Los iconos se insertarán aquí dinámicamente -->
+                </div>
+                <div id="iconGridMore" class="d-none">
+                    <!-- Iconos adicionales que se mostrarán con "Mostrar más" -->
+                </div>
+                <div class="col-12">
+                    <button id="showMoreBtnCustom" class="btn-fut-custom">Mostrar más</button>
+                    <button id="showLessBtnCustom" class="btn-fut-custom" style="display: none;">Mostrar menos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="seccion-actividad">
+        <div class="container-fut">
+            <div class="contentLeft-fut">
+                <div class="row-fut">
+                    <div class="imgWrapper-fut">
+                        <img src="/public/IMG/E_SDG_Icons_NoText-02.jpg" alt="">
+                    </div>
+                    <div class="imgWrapper-fut">
+                        <img src="/public/IMG/E_SDG_Icons_NoText-05.jpg" alt="">
+                    </div>
+                    <div class="imgWrapper-fut">
+                        <img src="/public/IMG/E_SDG_Icons_NoText-07.jpg" alt="">
+                    </div>
+                    <div class="imgWrapper-fut">
+                        <img src="/public/IMG/E_SDG_Icons_NoText-08.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contentRigth-fut">
+                <div class="content-fut">
+                    <h4>Historia</h4>
+                    <h2>Objetivo De Desarrollo Soste</h2>
+                    <p>Los Objetivos de Desarrollo Sostenible (ODS) nacen como una respuesta global a los principales
+                        desafíos que enfrenta el mundo en términos de desarrollo, sostenibilidad y equidad.
+                        Su origen se remonta al trabajo previo realizado en las últimas décadas por las Naciones Unidas
+                        y otros organismos internacionales.</p>
+                    <!-- Botón añadido -->
+                    <a href="/public/HTML/historia.html" class="btn-fut">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 04 -->
+    <section class="section-01">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2>¿Qué podemos hacer para
+                        solucionar estos problemas?</h2>
+                    <p>Los gobiernos deben invertir en energías renovables y en eficiencia
+                        energética. Las empresas necesitan usar solo electricidad de fuentes renovables.
+                        Los emprendedores pueden promover el teletrabajo y el transporte sostenible. Los
+                        inversores deben apoyar servicios energéticos sostenibles y nuevas tecnologías. A
+                        nivel personal, se puede ahorrar energía desconectando electrodomésticos y optar por
+                        ir en bicicleta, caminar o usar transporte público.</p>
+                </div>
+                <div class="col-md-4">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-interval="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://economicasbariloche-s2.cdn.net.ar/st2i1700/2023/06/economicasbariloche/images/52/57/525738_9b0257de512fa752966d76406a38851a9ed9fe271e489d010373b3ddd3457ead/sm.webp"
+                                    class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://conideintelligente.com/wp-content/uploads/2021/01/Depositphotos_29966311_l-2015_Fotor-1.jpg"
+                                    class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmbg10UuLs-0iZOjNG4aNR69hpi5VhBk2PA&s"
+                                    class="d-block w-100" alt="Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias-section" class="container my-4">
+        <div id="noticiasCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="noticiasCarouselItems">
+                <!-- Noticias cargadas dinámicamente -->
+                <div class="carousel-item active">
+                    <img src="ruta-a-imagen.jpg" class="d-block w-100" alt="Noticia 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Título de la Noticia</h5>
+                        <p>Descripción corta de la noticia...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Historia de los ODS -->
+    <section class="section-historia">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Historia de los ODS</h2>
+                    <p>Los Objetivos de Desarrollo Sostenible fueron adoptados en 2015 por todos los estados miembros de
+                        la ONU, para abordar los problemas más urgentes de nuestro planeta como la pobreza, desigualdad
+                        y el cambio climático. Estos objetivos suceden a los Objetivos del Milenio (ODM), con el
+                        compromiso de generar un impacto real para el año 2030.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/public/IMG/ODS-2.jpg" alt="Historia ODS" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section: Iniciativas de Energía Renovable -->
+    <section class="section-energias-renovables">
+        <div class="container text-center">
+            <h2>Iniciativas Globales para los ODS</h2>
+            <p>Para alcanzar el ODS 7, diversas iniciativas se están desarrollando en el mundo, impulsando energías
+                limpias como la solar, eólica e hidroeléctrica.</p>
+            <div class="row">
+                <div class="col-md-4 energy-card">
+                    <div class="card">
+                        <img src="/public/IMG/imagen2.jpg" alt="Energía Solar" class="img-fluid">
+                        <div class="card-body">
+                            <h5>Alianza Solar Internacional</h5>
+                            <p>Promueve el uso de energía solar en países con alta radiación, facilitando financiamiento
+                                y transferencia tecnológica. Más de 100 países trabajan en proyectos de energía limpia y
+                                contribuyendo al cumplimiento del ODS 7.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 energy-card">
+                    <div class="card">
+                        <span class="card-icon"><i class="fas fa-sun"></i></span>
+                        <img src="/public/IMG/imagen1.jpg" alt="Energía Solar" class="img-fluid">
+                        <div class="card-body">
+                            <h5>Scaling Up Nutrition</h5>
+                            <p>Busca erradicar el hambre y la desnutrición con programas de seguridad alimentaria
+                                y agricultura sostenible. Actúa en más de 60 países, reduciendo la desnutrición infantil
+                                y mejorando la calidad de vida, en línea con el ODS 2.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 energy-card">
+                    <div class="card">
+                        <img src="/public/IMG/imagen3.webp" alt="Energía Hidroeléctrica" class="img-fluid">
+                        <div class="card-body">
+                            <h5>Fondo Verde para el Clima</h5>
+                            <p>Financia proyectos en países en desarrollo para reducir emisiones de carbono,
+                                promover energías limpias y fortalecer la resiliencia climática. Con más de
+                                $10 mil millones movilizados, contribuye al cumplimiento del ODS 13.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Importancia Global -->
+    <section class="section-importancia-global">
+        <div class="container text-center">
+            <div class="icon-decorative">
+                <i class="fas fa-globe-americas"></i>
+            </div>
+            <h2>Importancia Global de los ODS</h2>
+            <p>Los Objetivos de Desarrollo Sostenible son una hoja de ruta para todos los países y todas las personas,
+                sin importar el contexto social, cultural o económico. Todos tenemos la responsabilidad de trabajar
+                hacia un planeta más justo, equitativo y sostenible.</p>
+        </div>
+    </section>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <img src="/public/IMG/imagen4.webp" alt="Imagen representativa de la Interdependencia Global"
+                    class="timeline-image">
+                <div class="timeline-text">
+                    <h3>Interdependencia Global</h3>
+                    <p>En un mundo interconectado, los problemas de una región pueden repercutir en otra. Por ejemplo,
+                        las emisiones de gases de efecto invernadero en un país afectan al clima global, y la pobreza o
+                        los conflictos en una región pueden generar flujos migratorios que impacten a otras naciones.
+                        Los ODS promueven la cooperación internacional para mitigar estos efectos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <img src="/public/IMG/imagen5.webp" alt="Imagen representativa de la Responsabilidad Compartida"
+                    class="timeline-image">
+                <div class="timeline-text">
+                    <h3>Responsabilidad Compartida</h3>
+                    <p>Aunque los países desarrollados y en desarrollo enfrentan diferentes retos, todos tienen un papel
+                        en alcanzar los ODS. Desde reducir las emisiones de carbono en las economías industrializadas
+                        hasta
+                        garantizar el acceso a educación y agua potable en las regiones más vulnerables, cada acción
+                        cuenta.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <img src="/public/IMG/imagen6.webp" alt="Imagen representativa de la Mejora de la Calidad de Vida"
+                    class="timeline-image">
+                <div class="timeline-text">
+                    <h3>Mejora de la Calidad de Vida</h3>
+                    <p>Los ODS no solo buscan proteger el planeta, sino también mejorar la vida de todas las personas.
+                        Objetivos como la salud, la igualdad de género, la educación de calidad y la creación de empleo
+                        decente son universales y esenciales para construir sociedades más justas y resilientes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <img src="/public/IMG/imagen7.webp" alt="Imagen representativa de Futuro Sostenible"
+                    class="timeline-image">
+                <div class="timeline-text">
+                    <h3>Futuro Sostenible</h3>
+                    <p>Los recursos naturales son limitados y el crecimiento económico actual, si no es sostenible,
+                        pone en riesgo las generaciones futuras. Al integrar los ODS en políticas y prácticas diarias,
+                        garantizamos que el desarrollo presente no comprometa las oportunidades del mañana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Botón de Volver al Inicio -->
+    <button id="backToTopBtn" onclick="scrollToTop()">&#8679;</button>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-auto">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos una organización dedicada a promover los Objetivos de Desarrollo Sostenible (ODS) y crear
+                        conciencia sobre su importancia en el mundo actual.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/public/HTML/Inicio.html" class="text-white">Inicio</a></li>
+                        <li><a href="#about" class="text-white">Acerca de</a></li>
+                        <li><a href="#services" class="text-white">Servicios</a></li>
+                        <li><a href="#contact" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <p>Email: <a href="mailto:jesus.luyoc@vallegrande.edu.pe"
+                            class="text-white">jesus.luyoc@vallegrande.edu.pe</a></p>
+                    <p>Email: <a href="mailto:Salvador.cardenas@vallegrande.edu.pe"
+                            class="text-white">Salvador.cardenas@vallegrande.edu.pe</a></p>
+                    <p>Email: <a href="mailto:duban.napan.salas@vallegrande.edu.pe"
+                            class="text-white">duban.napan.salas@vallegrande.edu.pe</a></p>
+                    <p>Teléfono: +51 921320431</p>
+                    <p>Síguenos en:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>&copy; 2024 - Todos los derechos reservados al equipo 09.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/public/JS/Inicio.js"></script>
+    <script src="/public/JS/linea de tienpo.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle con Popper (necesario para los componentes interactivos como el carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Esperar a que el documento se cargue completamente
+        document.addEventListener("DOMContentLoaded", function () {
+            // Realizar la solicitud AJAX al backend
+            fetch('/api/eventos')
+                .then(response => response.json())
+                .then(data => {
+                    // Verifica si hay eventos para hoy
+                    const eventoHoy = data.hoy;
+                    const mensajeElemento = document.getElementById("eventoHoyMensaje");
+
+                    if (eventoHoy.length > 0) {
+                        // Si hay eventos, mostrar el primero
+                        mensajeElemento.innerHTML = `${eventoHoy[0].titulo}: ${eventoHoy[0].descripcion}`;
+                    } else {
+                        // Si no hay eventos, mostrar un mensaje predeterminado
+                        mensajeElemento.innerHTML = "No hay ningún evento por el momento.";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al obtener eventos:', error);
+                    const mensajeElemento = document.getElementById("eventoHoyMensaje");
+                    mensajeElemento.innerHTML = "Error al cargar los eventos.";
+                });
+        });
+    </script>
+
+    <script>
+        // Función para cargar las noticias en el carrusel
+        function Noticias() {
+            fetch('/api/noticias')
+                .then(response => response.json())
+                .then(data => {
+                    const noticias = data.noticias;
+                    const carouselItems = document.getElementById('noticiasCarouselItems');
+
+                    // Limpia los items del carrusel para evitar duplicados
+                    carouselItems.innerHTML = '';
+
+                    if (noticias.length > 0) {
+                        noticias.forEach((noticia, index) => {
+                            const isActive = index === 0 ? 'active' : ''; // La primera noticia será activa
+
+                            const itemHTML = `
+                        <div class="carousel-item ${isActive}">
+                            <img src="${noticia.ImagenURL}" class="d-block w-100" alt="${noticia.Titulo}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>${noticia.Titulo}</h5>
+                                <p>${noticia.Descripcion}</p>
+                            </div>
+                        </div>
+                    `;
+                            carouselItems.innerHTML += itemHTML;
+                        });
+
+                        // Reiniciar el carrusel después de cargar las noticias
+                        const carousel = new bootstrap.Carousel(document.getElementById('noticiasCarrusel'));
+                        carousel.to(0); // Opcional, para ir al primer item al cargar
+                    } else {
+                        carouselItems.innerHTML = '<p>No hay noticias disponibles.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al cargar las noticias:', error);
+                    const carouselItems = document.getElementById('noticiasCarouselItems');
+                    carouselItems.innerHTML = '<p>Hubo un problema al cargar las noticias.</p>';
+                });
+        }
+
+        // Llamar la función para cargar las noticias cuando el documento se haya cargado
+        document.addEventListener('DOMContentLoaded', Noticias);
+
+
+
+    </script>
+    <script>
+        // Activar el deslizar (swipe) para el carrusel de noticias
+        const carrusel = document.getElementById('noticiasCarrusel');
+        const carouselInstance = new bootstrap.Carousel(carrusel, {
+            touch: true, // Habilita el deslizamiento táctil en dispositivos móviles
+            ride: 'carousel', // La opción de empezar el carrusel automáticamente
+            interval: 5000, // Intervalo de 5 segundos para cambiar los items
+        });
+
+        // Agregar soporte para arrastrar el carrusel en dispositivos de escritorio
+        let isMouseDown = false;
+        let startX;
+        let scrollLeft;
+
+        carrusel.addEventListener('mousedown', (e) => {
+            isMouseDown = true;
+            startX = e.pageX - carrusel.offsetLeft;
+            scrollLeft = carrusel.scrollLeft;
+        });
+
+        carrusel.addEventListener('mouseleave', () => {
+            isMouseDown = false;
+        });
+
+        carrusel.addEventListener('mouseup', () => {
+            isMouseDown = false;
+        });
+
+        carrusel.addEventListener('mousemove', (e) => {
+            if (!isMouseDown) return;
+            e.preventDefault();
+            const x = e.pageX - carrusel.offsetLeft;
+            const walk = (x - startX) * 1; // Ajusta la velocidad de desplazamiento
+            carrusel.scrollLeft = scrollLeft - walk;
+        });
+
+        // Cambiar automáticamente el carrusel cada 5 segundos
+        setInterval(() => {
+            carouselInstance.next(); // Cambia al siguiente item del carrusel
+        }, 5000); // 5000 ms = 5 segundos
+    </script>
+
+
+</body>
+
+</html>

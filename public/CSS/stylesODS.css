@@ -1,0 +1,377 @@
+
+
+:root {
+    --primary-color: #007bff;
+    --background-light: #f4f9ff;
+    --text-color: #333;
+    --feature-bg: #ffffff;
+    --secondary-color: #f0f0f0;
+    --accent-color: #0056b3;
+}
+
+/* General */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(0, 0, 0, 0.6)), url('/VIDEOS/videoplayback\ \(1\).mp4') center/cover no-repeat;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.hero-overlay {
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(95, 88, 88, 0.7);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+/* Features Section */
+#features {
+    background: var(--background-light);
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+#features h2 {
+    color: var(--primary-color);
+}
+
+.feature-box {
+    background: var(--feature-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-video {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+C
+/* News Section */
+#news {
+    background-color: #8fbf56;
+    /* Color de fondo más claro y armonioso */
+    color: #fff;
+    padding: 60px 0;
+    border-radius: 8px;
+}
+
+#news h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2b2b2b;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.news-item {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.news-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.news-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.news-item img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.news-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para el botón de volver al inicio */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Oculto por defecto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
+
+:root {
+    --primary-color: #007bff;
+    --background-light: #f4f9ff;
+    --text-color: #333;
+    --section-bg-color: #f7f7f7;
+    --section-bg-light-color: #ffffff;
+}
+
+.section-bg {
+    background-color: var(--section-bg-color);
+}
+
+.section-bg-light {
+    background-color: var(--section-bg-light-color);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+ul {
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .section-text,
+    .section-title {
+        text-align: left;
+    }
+}
+
+
+
+/* Estilo general para el footer */
+.footer {
+    background-color: #212529; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 40px 20px; /* Espaciado interno */
+    font-family: Arial, sans-serif;
+}
+
+.footer h4 {
+    font-size: 1.5rem; /* Tamaño del encabezado */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: #f8f9fa; /* Blanco suave */
+}
+
+.footer p, 
+.footer ul, 
+.footer li, 
+.footer a {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: #e9ecef; /* Blanco claro */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+.footer a {
+    text-decoration: none; /* Elimina subrayado */
+    transition: color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.footer a:hover {
+    color: #17a2b8; /* Azul claro en hover */
+}
+
+/* Listas sin estilo de puntos */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+/* Iconos sociales */
+.footer .list-inline {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espaciado entre iconos */
+    justify-content: flex-start;
+}
+
+.footer .list-inline a {
+    font-size: 1.2rem; /* Tamaño de los iconos */
+    color: #e9ecef; /* Blanco claro */
+    transition: color 0.3s ease;
+}
+
+.footer .list-inline a:hover {
+    color: #17a2b8; /* Azul claro en hover */
+}
+
+/* Parte inferior del footer */
+.footer .text-center {
+    background-color: #343a40; /* Fondo un poco más claro */
+    padding: 15px 0; /* Espaciado interno */
+    font-size: 0.85rem; /* Texto pequeño */
+    color: #e9ecef; /* Blanco claro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer h4 {
+        font-size: 1.3rem; /* Reduce el tamaño del título */
+    }
+
+    .footer p, 
+    .footer ul, 
+    .footer li, 
+    .footer a {
+        font-size: 0.85rem; /* Texto más pequeño */
+    }
+
+    .footer .container {
+        text-align: center; /* Centra todo el contenido */
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: column; /* Apila las columnas */
+        gap: 30px; /* Espaciado entre columnas */
+    }
+
+    .footer .list-inline {
+        justify-content: center; /* Centra los iconos sociales */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer h4 {
+        font-size: 1.1rem; /* Reduce más el tamaño del título */
+    }
+
+    .footer p {
+        font-size: 0.8rem; /* Texto más pequeño */
+    }
+
+    .footer .list-inline a {
+        font-size: 1rem; /* Reduce el tamaño de los iconos */
+    }
+}

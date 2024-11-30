@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>Registrar Consulta</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/public/CSS/Contactanos.css">
+</head>
+<body>
+  <!-- Botón de regresar -->
+  <a href="/public/HTML/Inicio.html" class="btn-back">
+    <i class="fas fa-arrow-left"></i> Volver al inicio
+  </a>
+
+  <!-- Contenedor principal del formulario -->
+  <div class="form-container d-flex justify-content-center">
+    <!-- Imagen izquierda -->
+    <div class="image-column" style="background-image: url('/Img/cielo.webp');"></div>
+
+    <!-- Columna del formulario -->
+    <div class="form-column">
+      <h2 class="form-title">Registrar Consulta</h2>
+      <p class="form-subtitle">Ingrese los datos de su consulta</p>
+      <form id="consultaForm" action="/submit-form" method="post" accept-charset="UTF-8" novalidate>
+        <div class="form-group mb-3">
+          <label for="nombre">Nombres</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresar Nombre" required>
+          <div class="error-message" id="nombreError"></div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingresa Apellido" required>
+          <div class="error-message" id="apellidosError"></div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="gmail">Correo Electrónico</label>
+          <input type="email" class="form-control" id="gmail" name="gmail" placeholder="Ingresos de Gmail" required>
+          <div class="error-message" id="gmailError"></div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="celular">Teléfono Principal</label>
+          <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingresar número" required>
+          <div class="error-message" id="celularError"></div>
+        </div>
+
+        <div class="form-group mb-4">
+          <label for="descripcion">Descripción</label>
+          <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Escriba su consulta aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Registrar Consulta</button>
+      </form>
+    </div>
+
+    <!-- Imagen derecha -->
+    <div class="image-column" style="background-image: url('/Img/paisaje.webp');"></div>
+  </div>
+
+  <!-- jQuery, Bootstrap y SweetAlert -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/public/JS/Contactanos.js"></script>
+</body>
+</html>

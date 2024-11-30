@@ -1,0 +1,135 @@
+/* Historia */
+.smnv-hero {
+    background-image: linear-gradient(to left, rgba(165, 154, 154, 0.507), rgba(76, 74, 74, 0.296)), url("/public/IMG/imagen.histori1.webp");
+    width: 100%;
+    height: 51rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.smnv-hero h1 {
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 1px 2px 13px white;
+    text-align: center;
+}
+
+.smnv-hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smnv-hero-text span {
+    font-size: 5.3rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 1px 2px 13px white;
+    text-align: center;
+}
+
+.smnv-hero-text {
+    text-align: center;
+    font-size: 40px;
+}
+
+#smnv-zoomed-text,
+#smnv-zoomed-span {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.smnv-seccion {
+    font-family: 'Poppins';
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.smnv-row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.smnv-row .smnv-imgWrapper {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.smnv-row .smnv-imgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.smnv-row .smnv-imgWrapper:hover img {
+    transform: scale(1.25);
+}
+
+.smnv-row .smnv-contentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.smnv-row .smnv-contentWrapper .smnv-textWrapper {
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.smnv-row .smnv-contentWrapper h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #383f47;
+    padding-bottom: 20px;
+}
+
+.smnv-row .smnv-contentWrapper p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+/* Media Queries */
+@media(max-width: 991px) {
+    .smnv-row {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .smnv-row .smnv-contentWrapper {
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 575px) {
+    .smnv-row .smnv-contentWrapper .smnv-textWrapper {
+        font-size: 18px;
+    }
+
+    .smnv-row .smnv-contentWrapper h2 {
+        font-size: 25px;
+    }
+
+    .smnv-row .smnv-contentWrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

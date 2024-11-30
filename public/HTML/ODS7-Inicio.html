@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Simplificada</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/CSS/stylesODS.css"> <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="/public/CSS/ODS7-P2.css">
+    <link rel="stylesheet" href="/public/CSS/styles2.css">
+    <link rel="stylesheet" href="/public/CSS/indicadores.css">
+    <link rel="stylesheet" href="/public/CSS/gira.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="Inicio.html">
+                <img src="/public/IMG/logo-nav.png" alt="Logo" class="img-fluid"
+                    style="width: 40px; height: 40px; margin-right: 8px;">
+                Eternal Energy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/public/HTML/Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/public/HTML/ODS7-Inicio.html">ODS7</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/HTML/producto.html">Producto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/HTML/Quienes-son.html">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/HTML/Contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop>
+            <source src="/VIDEOS/videoplayback (1).mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="hero-overlay d-flex justify-content-center align-items-center">
+            <div class="text-center text-white">
+                <h1>Bienvenido a Eternal Energy</h1>
+                <p>Soluciones de energía renovable para un futuro sostenible</p>
+                <a href="https://climate.selectra.com/es/que-es/energia-asequible-no-contaminante"
+                    class="btn btn-outline-light">Descubre Más</a>
+            </div>
+        </div>
+    </section>
+
+
+    <body>
+        <div class="container">
+            <!-- Título principal -->
+            <header>
+                <h1>Indicadores del Progreso</h1>
+            </header>
+
+            <section class="charts">
+                <!-- Gráfico de Barras -->
+                <div class="bar-chart">
+                    <h2>Indicadores ODS 7</h2>
+                    <canvas id="barChart"></canvas>
+                </div>
+
+                <!-- Gráfico Doughnut -->
+                <div class="oee-chart">
+                    <h2>Progreso General ODS 7</h2>
+                    <div class="doughnut-container">
+                        <canvas id="doughnutChart"></canvas>
+                        <span class="center-text">70%</span>
+                    </div>
+                    <p>Meta Global</p>
+                </div>
+            </section>
+
+            <!-- Indicadores individuales -->
+            <section class="details">
+                <div class="detail">
+                    <h3>Acceso a Energía Asequible</h3>
+                    <div class="pie-chart">
+                        <canvas id="availabilityChart"></canvas>
+                        <span class="center-text-small">90%</span>
+                    </div>
+                    <p>Porcentaje de población con acceso a electricidad</p>
+                </div>
+                <div class="detail">
+                    <h3>Eficiencia Energética</h3>
+                    <div class="pie-chart">
+                        <canvas id="qualityChart"></canvas>
+                        <span class="center-text-small">80%</span>
+                    </div>
+                    <p>Mejora en eficiencia energética</p>
+                </div>
+                <div class="detail">
+                    <h3>Uso de Energías Renovables</h3>
+                    <div class="pie-chart">
+                        <canvas id="performanceChart"></canvas>
+                        <span class="center-text-small">25%</span>
+                    </div>
+                    <p>Producción real/cantidad de producción prevista</p>
+                </div>
+            </section>
+
+        </div>
+        <script src="/public/JS/indicadores.js"></script>
+    </body>
+
+    <!-- Sección de Misión, Visión y Valores (con iconos y estilo tipográfico) -->
+    <section id="mission-vision-valores" class="py-5">
+        <header>
+            <h1>Retos y Desafíos</h1>
+        </header>
+        <div class="mision-retos">
+            <div class="container-retos">
+                <div class="box-retos">
+                    <h2>01</h2>
+                    <h3>A Nivel Local</h3>
+                    <p>Desafío: En muchas comunidades rurales, el acceso a fuentes de energía limpia es limitado, lo 
+                       que depende de costosos combustibles fósiles. Solución: Se pueden implementar sistemas de energía 
+                       solar comunitarios, lo que no solo reduce costos, sino que también mejora la calidad de vida de 
+                       los habitantes al ofrecer una fuente de energía accesible y sostenible.
+                    </p>
+                </div>
+            </div>
+            <div class="container-retos">
+                <div class="box-retos">
+                    <h2>02</h2>
+                    <h3>A Nivel Nacional</h3>
+                    <p>Desafío: Muchos países aún dependen en gran medida de combustibles fósiles para la generación de 
+                      energía, lo que contribuye al cambio climático y a la contaminación del aire. Solución: Adoptar 
+                      políticas públicas que promuevan la transición hacia energías renovables, como la solar, eólica y 
+                      geotérmica, incentivando la inversión en infraestructuras sostenibles y la reducción de emisiones.
+                    </p>
+                </div>
+            </div>
+            <div class="container-retos">
+                <div class="box-retos">
+                    <h2>03</h2>
+                    <h3>A Nivel Internacional</h3>
+                    <p>Desafío: En los países en desarrollo, la falta de recursos y financiamiento dificulta la 
+                        implementación de proyectos de energías renovables. Solución: Es crucial incrementar la 
+                        cooperación internacional y los fondos destinados a proyectos de energía limpia, para que estos 
+                        países puedan hacer la transición a fuentes más sostenibles sin comprometer su crecimiento 
+                        económico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Section 4: Noticias -->
+    <section id="news" class="py-5" style="background: #a7bd6a; color: white;">
+        <div class="container">
+            <h2 class="text-center mb-4">Noticias sobre Energía y Sostenibilidad</h2>
+            <div class="row">
+                <!-- Noticia 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img1.jpeg" class="img-fluid rounded mb-3" alt="Noticia 1"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Avances en Energía Renovable</h5>
+                        <p class="news-description">Los últimos desarrollos en energía solar y eólica están
+                            revolucionando el sector energético.</p>
+                    </div>
+                </div>
+                <!-- Noticia 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img3.jpeg" class="img-fluid rounded mb-3" alt="Noticia 2"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Nuevas Tecnologías para Energía Eficiente</h5>
+                        <p class="news-description">Innovaciones en tecnología de baterías están mejorando la eficiencia
+                            del almacenamiento de energía.</p>
+                    </div>
+                </div>
+                <!-- Noticia 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img6.jpeg" class="img-fluid rounded mb-3" alt="Noticia 3"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Iniciativas Comunitarias en Energía Verde</h5>
+                        <p class="news-description">Comunidades alrededor del mundo están implementando proyectos de
+                            energía renovable.</p>
+                    </div>
+                </div>
+                <!-- Noticia 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img4.jpeg" class="img-fluid rounded mb-3" alt="Noticia 4"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Políticas Gubernamentales para la Sostenibilidad</h5>
+                        <p class="news-description">Los gobiernos están implementando políticas para fomentar la
+                            inversión en energía renovable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Noticia 5 -->
+                <div class="col-md-6 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img8.jpeg" class="img-fluid rounded mb-3" alt="Noticia 5"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Energía Solar en el Hogar</h5>
+                        <p class="news-description">Cada vez más hogares están instalando paneles solares, lo que reduce
+                            la huella de carbono.</p>
+                    </div>
+                </div>
+
+                <!-- Noticia 8 -->
+                <div class="col-md-6 mb-4">
+                    <div class="news-item d-flex flex-column">
+                        <img src="/Img/img8.jpeg" class="img-fluid rounded mb-3" alt="Noticia 8"
+                            style="height: 150px; object-fit: cover;">
+                        <h5 class="news-title">Movilidad Eléctrica en Aumento</h5>
+                        <p class="news-description">El uso de vehículos eléctricos está en aumento, lo que reduce las
+                            emisiones contaminantes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Características</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 feature-text">
+                    <div class="feature-box p-4">
+                        <h4>Desempeño Optimizado</h4>
+                        <p>
+                            Nuestro servicio está diseñado para ofrecer un rendimiento excepcional, permitiendo que tu
+                            proyecto funcione sin problemas y a alta velocidad.
+                            Nos enfocamos en la eficiencia, garantizando que cada elemento esté optimizado para un
+                            funcionamiento sin interrupciones.
+                        </p>
+                        <p>
+                            Además, nuestro enfoque en la sostenibilidad y el uso de tecnologías avanzadas asegura que
+                            tu proyecto esté preparado para el futuro.
+                        </p>
+                        <a href="https://recla.org/blog/ods-7/" class="btn btn-primary mt-3">Más Información</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/_5sfqeT3aYc?start=5"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energía y Sostenibilidad Section -->
+    <section id="energy-sustainability" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Energía y Sostenibilidad</h2>
+            <div class="row align-items-center">
+                <!-- Imagen Izquierda -->
+                <div class="col-md-4 mb-4">
+                    <img src="/Img/img10.jpg" class="img-fluid" alt="Energía Renovable">
+                </div>
+
+                <!-- Texto Central -->
+                <div class="col-md-4 text-center">
+                    <h4>Comprometidos con un Futuro Sostenible</h4>
+                    <p>
+                        La energía renovable no solo es una opción, sino una necesidad en el mundo actual. Nuestro
+                        enfoque garantiza un futuro más limpio y verde.
+                    </p>
+                    <a href="https://engelenergy.es/blog/ods-7/" class="btn btn-primary mt-3">Descubre Más</a>
+                </div>
+
+                <!-- Imagen Derecha -->
+                <div class="col-md-4 mb-4"><br>
+                    <img src="/Img/img11.jpg" class="img-fluid" alt="Sostenibilidad Ambiental">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Botón de Volver al Inicio -->
+    <button id="backToTopBtn" onclick="scrollToTop()">&#8679;</button>
+
+
+    <!-- Sección 1: Propósito y Objetivos de la Empresa -->
+    <section class="purpose-section text-center py-5">
+        <div class="container">
+            <h2 class="section-title">Propósito y Objetivos de la Empresa</h2>
+            <p class="lead">Nos dedicamos a promover el acceso a energía asequible y no contaminante para impulsar un
+                desarrollo sostenible en todo el mundo.</p>
+            <p>Nuestro objetivo a largo plazo es ser un referente en soluciones energéticas que minimicen el impacto
+                ambiental y mejoren la calidad de vida de las personas, alineándonos con los Objetivos de Desarrollo
+                Sostenible.</p>
+        </div>
+    </section>
+
+
+
+    <section class="image-gallery py-5">
+        <div class="container">
+            <h2 class="section-title">Galería Visual de Proyectos Energéticos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0005.jpg" alt="Proyecto Energético 1">
+                        </div>
+                        <p class="caption">Instalación de paneles solares en áreas rurales para energía limpia y sostenible.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0014.jpg" alt="Proyecto Energético 2">
+                        </div>
+                        <p class="caption">Parques eólicos que generan energía renovable en zonas urbanas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0007.jpg" alt="Proyecto Energético 3">
+                        </div>
+                        <p class="caption">Proyectos de investigación en energías renovables y su impacto ambiental.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0008.jpg" alt="Proyecto Energético 4">
+                        </div>
+                        <p class="caption">Instalación de paneles solares en áreas rurales para energía limpia y sostenible.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0012.jpg" alt="Proyecto Energético 5">
+                        </div>
+                        <p class="caption">Parques eólicos que generan energía renovable en zonas urbanas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="image-box">
+                        <div class="image-container">
+                            <img src="/Img/IMG-20241027-WA0013.jpg" alt="Proyecto Energético 6">
+                        </div>
+                        <p class="caption">Proyectos de investigación en energías renovables y su impacto ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-auto">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Sobre Nosotros</h4>
+                    <p>Somos una organización dedicada a promover los Objetivos de Desarrollo Sostenible (ODS) y crear
+                        conciencia sobre su importancia en el mundo actual.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/public/HTML/Inicio.html" class="text-white">Inicio</a></li>
+                        <li><a href="#about" class="text-white">Acerca de</a></li>
+                        <li><a href="#services" class="text-white">Servicios</a></li>
+                        <li><a href="#contact" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <p>Email: <a href="mailto:jesus.luyoc@vallegrande.edu.pe"
+                            class="text-white">jesus.luyoc@vallegrande.edu.pe</a></p>
+                    <p>Email: <a href="mailto:Salvador.cardenas@vallegrande.edu.pe"
+                            class="text-white">Salvador.cardenas@vallegrande.edu.pe</a></p>
+                    <p>Email: <a href="mailto:duban.napan.salas@vallegrande.edu.pe"
+                            class="text-white">duban.napan.salas@vallegrande.edu.pe</a></p>
+                    <p>Teléfono: +51 921320431</p>
+                    <p>Síguenos en:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>&copy; 2024 - Todos los derechos reservados al equipo 09.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="/public/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

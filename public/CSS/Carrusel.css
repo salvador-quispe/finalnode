@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    background: rgb(255, 253, 253);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de la sección de introducción */
+  .intro {
+    max-width: 35%;
+  }
+  
+  .intro h4 {
+    font-size: 1rem;
+    color: #6c757d;
+    text-transform: uppercase;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin: 10px 0;
+  }
+  
+  .intro hr {
+    width: 50px;
+    height: 3px;
+    background-color: #0d6efd;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.5;
+  }
+  
+  .intro .btn {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .intro .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Carrusel */
+  #aquatic-carousel .carousel-container {
+    max-width: 65%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #aquatic-carousel .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #aquatic-carousel .slide {
+    min-width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #aquatic-carousel .slide img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #aquatic-carousel .text-content {
+    max-width: 60%;
+  }
+  
+  #aquatic-carousel .text-content h2 {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    margin: 10px 0;
+  }
+  
+  #aquatic-carousel .text-content p {
+    font-size: 1rem;
+    color: #343a40;
+    margin: 10px 0 20px;
+  }
+  
+  #aquatic-carousel .text-content .btn {
+    padding: 8px 16px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  #aquatic-carousel .text-content .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Indicadores de puntos */
+  #aquatic-carousel .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  #aquatic-carousel .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #aquatic-carousel .dot.active {
+    background-color: #0d6efd;
+  }
+  

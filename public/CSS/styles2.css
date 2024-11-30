@@ -1,0 +1,160 @@
+/* Sección de Misión, Visión y Valores */
+#mission-vision-valores {
+    padding: 60px 0;
+    background-color: #f5f5f5; /* Fondo claro */
+    text-align: center;
+}
+
+#mission-vision-valores h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.wrap {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas cuando sea necesario */
+}
+
+/* Estilos para cada tarjeta (envoltura) */
+.tarjeta-wrap {
+    perspective: 800px; /* Profundidad para el efecto 3D */
+}
+
+/* Estilo general de las tarjetas */
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    background: #c9a6a6; /* Fondo suave */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la parte delantera y trasera de las tarjetas */
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta el lado trasero */
+    border-radius: 8px;
+}
+
+.adelante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradiente de azul */
+}
+
+.adelante i {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.atras {
+    transform: rotateY(180deg); /* Rota el lado trasero */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    background: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd;
+}
+
+/* Efecto hover */
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg); /* Rota la tarjeta al pasar el cursor */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card1 {
+    background-image: url('http://1.1m.yt/J9Kw7kl.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card2 {
+    background-image: url('http://1.1m.yt/dlxMf3R.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card3 {
+    background-image: url('http://3.1m.yt/EUB_xE.jpg');
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* Responsividad para pantallas medianas */
+@media screen and (max-width: 768px) {
+    #mission-vision-valores h1 {
+        font-size: 2rem;
+    }
+
+    .wrap {
+        gap: 15px; /* Reduce el espacio entre tarjetas */
+    }
+
+    .tarjeta {
+        width: 250px; /* Reduce el ancho de las tarjetas */
+        height: 300px; /* Reduce la altura de las tarjetas */
+    }
+
+    .adelante i {
+        font-size: 2em; /* Ajusta el tamaño del ícono */
+    }
+
+    .adelante, .atras {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    #mission-vision-valores h1 {
+        font-size: 1.5rem;
+    }
+
+    .wrap {
+        gap: 10px; /* Espaciado más compacto */
+    }
+
+    .tarjeta {
+        width: 200px; /* Reduce aún más el ancho */
+        height: 250px; /* Reduce la altura */
+    }
+
+    .adelante i {
+        font-size: 1.5em; /* Ajusta el tamaño del ícono */
+    }
+
+    .adelante, .atras {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+}

@@ -1,0 +1,131 @@
+.service-section {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para móviles */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la sección en el contenedor */
+    border: none; /* Elimina cualquier borde */
+    background: transparent; /* Asegúrate de que el fondo sea transparente */
+}
+
+.service-description {
+    background: rgba(0, 0, 0, 0.6) url(https://media.istockphoto.com/id/1162866632/es/foto/granja-de-turbinas-e%C3%B3licas.jpg?s=612x612&w=0&k=20&c=57KMYZ4W4PXoBccemIqWc1rT6OSv1J-SO0hDHjuSDqA=) no-repeat center center;
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
+    color: #fff;
+    padding: 60px;
+    width: 100%; /* Cambiar a 100% para móviles */
+    max-width: 600px; /* Tamaño máximo para pantallas grandes */
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.service-description h1 {
+    background: transparent; /* Asegúrate de que no haya fondo */
+    color: #000; /* Ajusta el color del texto según sea necesario */
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente aquí */
+    font-weight: 600; /* Ajusta el grosor de la fuente aquí */
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido */
+    text-align: center; /* Centra el texto */
+}
+
+.service-list {
+    flex: 1; /* Toma todo el espacio disponible */
+    display: flex; /* Utiliza Flexbox para alinear los elementos */
+    flex-direction: column; /* Alinea verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #E8F4F4;
+    padding: 40px;
+    width: 100%; /* Cambia a 100% para móviles */
+    max-width: 600px; /* Mantiene el mismo ancho que la descripción */
+    height: auto; /* Ajusta automáticamente según el contenido */
+}
+
+.service-list .service-item {
+    width: 100%; /* Asegura que cada item ocupe el ancho del contenedor */
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+.service-list .icon {
+    font-size: 2em; /* Ajusta el tamaño del ícono */
+    margin-right: 10px; /* Espacio entre ícono y texto */
+}
+
+.service-list img {
+    width: 100%; /* Asegúrate de que la imagen ocupe el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.service-description p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 3em;
+    color: #4a90e2;
+    background-color: #e8f0fe;
+    border-radius: 50%;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.service-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.service-info p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+    .service-section {
+        flex-direction: row; /* Cambia a disposición en fila en pantallas grandes */
+        justify-content: space-between; /* Espaciado entre descripción y lista de servicios */
+    }
+
+    .service-description,
+    .service-list {
+        width: 50%; /* Mantiene el mismo ancho en pantallas grandes */
+    }
+}
+
+@media (max-width: 600px) {
+    .service-description h1 {
+        font-size: 2em; /* Ajuste de tamaño de fuente para móviles */
+    }
+
+    .service-description p,
+    .service-info p {
+        font-size: 1em; /* Ajuste de tamaño de texto */
+    }
+
+    .icon {
+        width: 50px; /* Tamaño de ícono más pequeño para móviles */
+        height: 50px; /* Ajuste de altura */
+    }
+}

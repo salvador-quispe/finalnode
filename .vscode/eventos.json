@@ -1,0 +1,11 @@
+{
+    "pasados": [
+        { "fecha": "2024-11-23", "nombre_evento": "Evento Pasado 1" }
+    ],
+    "hoy": [
+        { "fecha": "2024-11-25", "nombre_evento": "Evento de Hoy" }
+    ],
+    "futuros": [
+        { "fecha": "2024-11-27", "nombre_evento": "Evento Futuro 1" }
+    ]
+}

@@ -1,0 +1,315 @@
+/* Estilo general para el navbar */
+.navbar {
+  background-color: #007bff !important; /* Azul personalizado */
+  padding: 10px 20px; /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Logo del navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Botón de colapso (para pantallas pequeñas) */
+.navbar-toggler {
+  border: none; /* Elimina el borde del botón */
+}
+
+/* Contenedor del menú desplegable */
+#navbarNav {
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Lista del navbar */
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Alineación vertical de los enlaces */
+  align-items: flex-start; /* Alineación a la izquierda */
+}
+
+/* Estilo para cada elemento de la lista */
+.nav-item {
+  margin-bottom: 10px; /* Espaciado entre enlaces */
+  width: 100%; /* Asegura que cada enlace ocupe todo el ancho */
+}
+
+/* Estilo de los enlaces */
+.nav-link {
+  color: white; /* Texto blanco */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Efecto hover sobre los enlaces */
+.nav-link:hover {
+  background-color: white; /* Fondo blanco */
+  color: #007bff; /* Texto azul */
+}
+
+/* Estilo para el enlace activo */
+.nav-link.active {
+  background-color: #0056b3; /* Fondo azul oscuro */
+  color: yellow; /* Texto amarillo */
+  font-weight: bold;
+}
+
+/* Responsividad: pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-nav {
+      align-items: flex-start; /* Asegura que los elementos permanezcan alineados a la izquierda */
+  }
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a90e2;
+  }
+  .purpose-section {
+    background-color: #e0f7fa;
+    padding: 40px 0;
+  }
+  .ods-relations {
+    background-color: #f1f8e9;
+    padding: 40px 0;
+  }
+  .image-gallery {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  .image-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .image-box img:hover {
+    transform: scale(1.05);
+  }
+  .image-box .caption {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .interactive-options {
+    background-color: #ede7f6;
+    padding: 40px 0;
+  }
+  .option-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    .image-gallery .row {
+      display: block;
+    }
+  }
+/* Contenedor uniforme para todas las imágenes */
+.image-container {
+  width: 100%;           /* Ocupa todo el ancho disponible */
+  height: 200px;         /* Fija la altura inicial de las imágenes */
+  overflow: hidden;      /* Recorta cualquier contenido que desborde */
+  display: flex;         /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center;   /* Centra las imágenes verticalmente */
+  background-color: #f0f0f0; /* Añade un fondo claro para evitar espacios vacíos */
+}
+
+/* Imágenes dentro del contenedor */
+.image-container img {
+  width: 100%;          /* La imagen ocupa todo el ancho disponible inicialmente */
+  height: auto;         /* Mantiene la proporción */
+  object-fit: cover;    /* Asegura que la imagen se adapte sin deformarse */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .image-container {
+      height: 150px; /* Reduce la altura para dispositivos medianos */
+  }
+
+  .image-container img {
+      width: auto;   /* Permite que la imagen se ajuste dinámicamente */
+      height: 100%;  /* Asegura que la imagen llene el contenedor verticalmente */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+      height: 120px; /* Altura más baja para pantallas pequeñas */
+  }
+
+  .image-container img {
+      width: 100%;  /* La imagen ocupa todo el ancho en móviles */
+      height: auto; /* Mantiene la proporción */
+  }
+}
+
+/* Estilos generales */
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* Retos y desafíos */
+
+.mision-retos {
+  display: flex;
+  justify-content: center; /* Centra los cuadros horizontalmente */
+  align-items: flex-start; /* Alinea los cuadros en la parte superior */
+  flex-wrap: nowrap; /* Mantiene los cuadros en una fila */
+  gap: 30px; /* Espaciado reducido entre cuadros */
+  padding-bottom: 70px;
+  overflow-x: auto; /* Permite desplazamiento horizontal si no hay suficiente espacio */
+}
+
+.container-retos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-retos .box-retos {
+  position: relative;
+  width: 300px; /* Ancho fijo */
+  height: 350px; /* Altura fija */
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1); /* Sombra más sutil */
+  transition: transform 0.3s ease-in-out;
+}
+
+.container-retos .box-retos:hover {
+  transform: translateY(-10px); /* Sube ligeramente al hacer hover */
+}
+
+.container-retos .box-retos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #87cefa; /* Color celeste */
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+}
+
+.container-retos .box-retos:hover::before {
+  transform: scaleY(1); /* Fondo celeste al hacer hover */
+  transform-origin: top;
+}
+
+.container-retos .box-retos h2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 3em;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.container-retos .box-retos:hover h2 {
+  opacity: 1;
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+.container-retos .box-retos h3 {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  z-index: 2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container-retos .box-retos p {
+  position: relative;
+  z-index: 2;
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.container-retos .box-retos:hover h3,
+.container-retos .box-retos:hover p {
+  color: #fff;
+}
+
+/* Media queries para ajustar el diseño */
+@media (max-width: 1200px) {
+  .container-retos .box-retos {
+    flex: 0 0 30%; /* Ajusta el tamaño de los cuadros en pantallas más grandes pero pequeñas */
+  }
+}
+
+@media (max-width: 991px) {
+  .mision-retos {
+    gap: 15px; /* Reduce el espacio entre los cuadros en pantallas medianas */
+  }
+
+  .container-retos .box-retos {
+    flex: 0 0 45%; /* Ajusta los cuadros a la mitad del ancho en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .mision-retos {
+    gap: 10px; /* Reduce aún más el espacio entre los cuadros en pantallas más pequeñas */
+  }
+
+  .container-retos .box-retos {
+    flex: 0 0 50%; /* Ajusta los cuadros para ocupar el 50% del ancho en pantallas pequeñas */
+  }
+}
+
+/* Para pantallas móviles (575px o menos) */
+@media (max-width: 575px) {
+  .mision-retos {
+    flex-direction: column; /* Hace que los cuadros se apilen uno encima del otro */
+    gap: 10px; /* Ajusta el espacio entre los cuadros */
+  }
+
+  .container-retos .box-retos {
+    flex: 0 0 100%; /* Los cuadros ocupan el 100% del ancho en pantallas muy pequeñas */
+  }
+}
